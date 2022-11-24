@@ -1,0 +1,14 @@
+#menu{
+    background-color: #ccc;
+    text-align: justify;
+}
+p{
+    background-color: aqua;
+}
+
+img{
+    width: 15%;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 0px;
+}
