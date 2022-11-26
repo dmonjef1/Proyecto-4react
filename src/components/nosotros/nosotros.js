@@ -13,10 +13,10 @@ export default function Nosotros() {
             <h2>Alejandro Grimaldi</h2>
             <p>Chef Pizzero</p>
             <div class="social-media">
-              <a href=""><span class="fab fa-facebook"></span></a>
-              <a href=""><span class="fab fa-instagram"></span></a>
-              <a href=""><span class="fab fa-twitter"></span></a>
-              <a href=""><span class="fab fa-linkedin-in"></span></a>
+            <i><ion-icon name="logo-facebook"></ion-icon></i>
+              <i><ion-icon name="logo-twitter"></ion-icon></i>
+              <i><ion-icon name="logo-instagram"></ion-icon></i>
+              <i><ion-icon name="logo-linkedin"></ion-icon></i>
             </div>
 
           </div>
@@ -28,10 +28,10 @@ export default function Nosotros() {
             <h2>Antonio Sorrentino </h2>
             <p>Chef</p>
             <div class="social-media">
-              <a href=""><span class="fab fa-facebook"></span></a>
-              <a href=""><span class="fab fa-instagram"></span></a>
-              <a href=""><span class="fab fa-twitter"></span></a>
-              <a href=""><span class="fab fa-linkedin-in"></span></a>
+            <i><ion-icon name="logo-facebook"></ion-icon></i>
+              <i><ion-icon name="logo-twitter"></ion-icon></i>
+              <i><ion-icon name="logo-instagram"></ion-icon></i>
+              <i><ion-icon name="logo-linkedin"></ion-icon></i>
             </div>
 
           </div>
@@ -43,10 +43,10 @@ export default function Nosotros() {
             <h2>Isabella Rossi</h2>
             <p>Chef Pizzero</p>
             <div class="social-media">
-              <a href=""><span class="fab fa-facebook"></span></a>
-              <a href=""><span class="fab fa-instagram"></span></a>
-              <a href=""><span class="fab fa-twitter"></span></a>
-              <a href=""><span class="fab fa-linkedin-in"></span></a>
+            <i><ion-icon name="logo-facebook"></ion-icon></i>
+              <i><ion-icon name="logo-twitter"></ion-icon></i>
+              <i><ion-icon name="logo-instagram"></ion-icon></i>
+              <i><ion-icon name="logo-linkedin"></ion-icon></i>
             </div>
 
           </div>
@@ -58,10 +58,10 @@ export default function Nosotros() {
             <h2>Gina Martini</h2>
             <p>Chef</p>
             <div class="social-media">
-              <a href=""><span class="fab fa-facebook"></span></a>
-              <a href=""><span class="fab fa-instagram"></span></a>
-              <a href=""><span class="fab fa-twitter"></span></a>
-              <a href=""><span class="fab fa-linkedin-in"></span></a>
+              <i><ion-icon name="logo-facebook"></ion-icon></i>
+              <i><ion-icon name="logo-twitter"></ion-icon></i>
+              <i><ion-icon name="logo-instagram"></ion-icon></i>
+              <i><ion-icon name="logo-linkedin"></ion-icon></i>
             </div>
 
           </div>
