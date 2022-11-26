@@ -3,12 +3,14 @@ import { addDoc, collection } from "firebase/firestore";
 import { useState } from 'react';
 import { db } from '../../../../config/firestore';
 import './formulario-contacto.css'
+
 export default function FormularioContactoNormal() {
   const [ formValues, setFormValues ] = useState( {
     name: "",
     surname: "",
     email: "",
-    contactReason: ""
+    date: "",
+    reservationDescrip: ""
   } )
 
   async function handleSubmit( event ) {
@@ -30,21 +32,35 @@ export default function FormularioContactoNormal() {
 
   }
 
+  /*function limpiar(){
+     const [formValues]={
+      name: "",
+      surname: "",
+      email: "",
+      date: "",
+      reservationDescrip: ""
+      
+  }
+  }
+*/
   return (
     <form onSubmit={ handleSubmit }>
       <label htmlFor='name'>Nombre</label>
       <input id='name' name='name' type="text" value={ formValues.name } onChange={ handleFormChange }></input>
-
+      
       <label htmlFor='surname'>Apellido</label>
       <input id='surname' name='surname' type="text" value={ formValues.surname } onChange={ handleFormChange }></input>
 
       <label htmlFor='email'>Correo</label>
       <input id='email' name='email' type="email" value={ formValues.email } onChange={ handleFormChange }></input>
 
-      <label htmlFor='contactReason'>Motivo</label>
-      <textarea id='contactReason' name='contactReason' value={ formValues.contactReason } onChange={ handleFormChange }></textarea>
+      <label htmlFor='date'>Fecha</label>
+      <input id='date' name='date' type="date" value={ formValues.date } onChange={ handleFormChange }></input>
 
-      <button type='submit'>Enviar</button>
+      <label htmlFor='reservationDescrip'>Descripcion</label>
+      <textarea id='reservationDescrip' name='reservationDescrip' value={ formValues.reservationDescrip } onChange={ handleFormChange }></textarea>
+
+      <button type='submit' >Enviar</button>
     </form>
   )
 }
