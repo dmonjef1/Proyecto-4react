@@ -8,6 +8,7 @@ import Menu from './components/menu/menu';
 import Navbar from './components/navbar/navbar';
 import Nosotros from './components/nosotros/nosotros';
 import Reservacion from './components/reservacion/reservacion';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
 
         </Routes>
       </Router>
+      <Footer/>
     </div>
   );
 }
