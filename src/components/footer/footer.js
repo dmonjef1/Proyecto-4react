@@ -8,18 +8,20 @@ export default function Footer() {
             <div className="container__footer">
 
                 <div className="box__footer">
-                    <a>Compañia</a>
-                    <a>Acerca de</a>
-                    <a>Quieres trabajar con nosotros</a>
-                    <a>Contacto</a>
-                    <a>Formulario de contacto</a>
+                    <i>Compañia</i>
+                    <i>Acerca de</i>
+                    <i>Quieres trabajar con nosotros</i>
+                    <i>Contacto</i>
+                    <i>Formulario de contacto</i>
                 </div>
 
                 <div className="box__footer">
-                    <a>Redes Sociales</a>
-                    <a>Facebook</a>
-                    <a>Twitter</a>
-                    <a>Instagram</a>
+
+                    <h1>Redes sociales</h1>
+                    <h2>Whatsaap <ion-icon name="logo-whatsapp"></ion-icon></h2>
+                    <h2>Facebook <ion-icon name="logo-facebook"></ion-icon></h2>
+                    <h2>Twitter <ion-icon name="logo-twitter"></ion-icon></h2>
+                    <h2>Instagram <ion-icon name="logo-instagram"></ion-icon></h2>
                 </div>
 
             </div>
