@@ -22,14 +22,10 @@ export default function Footer() {
             <p> Todos los derechos reservadors por los estudiantes del Bootcamp Desarrollador Full Stack UDD <b>D&S</b></p>
             </div>
 
-            <div className="footer-menu">
-                <ul className="f-menu">
-                <li><i href="">Inicio</i></li>
-                <li><i href="">Sobre nosotros</i></li>
-                <li><i href="">Contactos</i></li>
-                <li><i href=""></i>Quieres trabajar con nosotros</li>
-                </ul>
-            </div>
+           
+            
+           
+            
         </footer>
 
     )
