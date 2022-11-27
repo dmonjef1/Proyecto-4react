@@ -1,4 +1,13 @@
 .titulo-reserva {
     margin-bottom: 20px;
     margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    .titulo-reserva {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }

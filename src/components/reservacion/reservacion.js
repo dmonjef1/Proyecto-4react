@@ -4,6 +4,7 @@ export default function Reservacion() {
   return ( 
   <div>
   <h1 className="titulo-reserva"> 
+    
     Reserva con nosotros
 
   </h1>
