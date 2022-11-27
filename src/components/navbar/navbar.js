@@ -31,13 +31,13 @@ export default function Navbar() {
         }>
         <ul>
           <li>
-            <a href="/about-us">Nosotros</a>
+            <a href="/about-us">Conoce nuestro Staff</a>
           </li>
           <li>
             <a href="/menu">Menú</a>
           </li>
           <li>
-            <a href="/reservations">Reservas</a>
+            <a href="/reservations">¿Quieres Reservar?</a>
           </li>
         </ul>
       </div>

@@ -1,72 +1,24 @@
-
-.titulo-menu {
-    margin-bottom: 20px;
+.pizza-info {
+    padding: 20px;
     margin-top: 20px;
 }
 
-
-#menus{
-    height: 100vh;
-    display: flex;
+.pizza-imagen {
+    margin-top: 35px;
 }
 
-.pizza{
-    flex-grow: 1;
-    overflow: hidden;
-    position: relative;
-    transition: all 0.5s;
+h1 {
+    padding: 10px;
 }
 
-.pizza:hover{
-    flex-grow: 3;
+p {
+    padding: 5px;
 }
 
-.pizza-imagen{
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    filter: grayscale(80%);
+@media (max-width:500px) {
+    .titulo-menu .menu-productos .contenedor-principal .pizza-imagen {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
-
-.pizza:hover .pizza-imagen{
-    filter: grayscale(0%);
-}
-
-.pizza-info{
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    transition: all 0.1s;
-}
-
-
-.persona:hover .persona-info{
-    opacity: 1;
-    bottom: 60px;
-    transition-delay: 0.3s;
-}
-
-.pizza-info h1{
-    font-size: 30px;
-    color: black;
-    font-weight: 600;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
-}
-
-
-.pizza-info p{
-    color: var(--color-secundario);
-    font-size: 20px;
-    font-weight: 700;
-    font-style: italic;
-    margin-top: 8px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 3px black;
-}
-
-
-
-
