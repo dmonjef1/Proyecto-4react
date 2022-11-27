@@ -32,17 +32,7 @@ export default function FormularioContactoNormal() {
 
   }
 
-  /*function limpiar(){
-     const [formValues]={
-      name: "",
-      surname: "",
-      email: "",
-      date: "",
-      reservationDescrip: ""
-      
-  }
-  }
-*/
+
   return (
     <form onSubmit={ handleSubmit }>
       <label htmlFor='name'>Nombre</label>
