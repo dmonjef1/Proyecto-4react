@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="navigation">
       <a href="/" className="brand-name">
-        Restaurant
+        <h1>PIZERRIA D&S <ion-icon name="pizza"></ion-icon></h1>
       </a>
       <button className="hamburger" onClick={ () => {
         setIsNavExpanded( !isNavExpanded );
@@ -31,13 +31,13 @@ export default function Navbar() {
         }>
         <ul>
           <li>
-            <a href="/about-us">Nosotros</a>
+            <a href="/about-us">Conoce nuestro Staff</a>
           </li>
           <li>
             <a href="/menu">Menú</a>
           </li>
           <li>
-            <a href="/reservations">Reservas</a>
+            <a href="/reservations">¿Quieres Reservar?</a>
           </li>
         </ul>
       </div>

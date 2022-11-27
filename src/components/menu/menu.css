@@ -1,58 +1,32 @@
-.tarjetas {
-    display: block;
-    justify-content: center;
-    background-color: #f0f0f0;
-}
-
-
-.menu1{
-    background-color: #fff;
-    display: flex;
-    padding: 100px;
-}
-
-.text1{
-    background-color: #f9f9f9;
-    padding: 80px;
-    width: 700px;
-    margin: 80px;
-    border-radius: 25%;
-}
-
-.menu2{
-    background-color: #fff;
-    display: flex;
-    padding: 100px;
-}
-
-.text2{
-    background-color: #f9f9f9;
-    padding: 80px;
-    width: 700px;
-    margin: 80px;
-    border-radius: 25%;
-}
-
-.menu3{
-    background-color: #fff;
-    display: flex;
-    padding: 100px;
-}
-
-.text3{
-    background-color: #f9f9f9;
-    padding: 80px;
-    width: 700px;
-    margin: 80px;
-    border-radius: 25%;
-}
-
-img {
-    margin-left: 250px ;
-    width: 700px;
+.pizza-info {
     padding: 20px;
+    margin-top: 20px;
+}
+
+.pizza-imagen {
+    margin-top: 35px;
 }
 
 h1 {
-    margin-top: 100px;
+    padding: 10px;
+}
+
+p {
+    padding: 5px;
+}
+
+@media (max-width:500px) {
+    .titulo-menu .menu-productos .contenedor-principal .pizza-imagen {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    img {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }

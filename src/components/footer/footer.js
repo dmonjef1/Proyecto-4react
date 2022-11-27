@@ -4,28 +4,31 @@ export default function Footer() {
     return (
 
         <footer>
+            <div className="footer-content">
 
-            <div className="container__footer">
+                <h3>Pizzeria D&S</h3>
+                <p>Pizzeria D&S tienen años de experiencia en la elaboración de las mejores masas tradicionales y hechas en casa
+                    y con los ingredientes mas naturales y de alta calidad.</p>
 
-                <div className="box__footer">
-                    <a>Compañia</a>
-                    <a>Acerca de</a>
-                    <a>Quieres trabajar con nosotros</a>
-                    <a>Contacto</a>
-                    <a>Formulario de contacto</a>
-                </div>
-
-                <div className="box__footer">
-                    <a>Redes Sociales</a>
-                    <a>Facebook</a>
-                    <a>Twitter</a>
-                    <a>Instagram</a>
-                </div>
-
+                <ul className="socials">
+                <i><ion-icon name="logo-facebook"></ion-icon></i>
+                <i><ion-icon name="logo-twitter"></ion-icon></i>
+                <i><ion-icon name="logo-instagram"></ion-icon></i>
+                <i><ion-icon name="logo-linkedin"></ion-icon></i>
+                </ul>
             </div>
 
-            <div className="box__copyright">
-                <p> Todos los derechos reservadors por los estudiantes del Bootcamp Desarrollador Full Stack UDD <b>D&S</b></p>
+            <div className="footer-bottom">
+            <p> Todos los derechos reservadors por los estudiantes del Bootcamp Desarrollador Full Stack UDD <b>D&S</b></p>
+            </div>
+
+            <div className="footer-menu">
+                <ul className="f-menu">
+                <li><i href="">Inicio</i></li>
+                <li><i href="">Sobre nosotros</i></li>
+                <li><i href="">Contactos</i></li>
+                <li><i href=""></i>Quieres trabajar con nosotros</li>
+                </ul>
             </div>
         </footer>
 

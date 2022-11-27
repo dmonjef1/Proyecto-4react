@@ -5,52 +5,74 @@ import { db } from '../../../../config/firestore';
 import './formulario-contacto.css'
 
 export default function FormularioContactoNormal() {
-  const [ formValues, setFormValues ] = useState( {
+  const [formValues, setFormValues] = useState({
     name: "",
     surname: "",
     email: "",
     date: "",
     reservationDescrip: ""
-  } )
+  })
 
-  async function handleSubmit( event ) {
+  async function handleSubmit(event) {
     event.preventDefault()
-    console.log( formValues )
+    console.log(formValues)
     try {
-      const docRef = await addDoc( collection( db, "Contactos" ), formValues );
-      console.log( "Document written with ID: ", docRef.id );
-    } catch ( e ) {
-      console.error( "Error adding document: ", e );
+      const docRef = await addDoc(collection(db, "Contactos"), formValues);
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
     }
   }
 
-  function handleFormChange( event ) {
+  function handleFormChange(event) {
     const { target } = event
     const { name, value } = target
-    const newValues = { ...formValues, [ name ]: value }
-    setFormValues( newValues )
+    const newValues = { ...formValues, [name]: value }
+    setFormValues(newValues)
 
   }
 
 
   return (
-    <form onSubmit={ handleSubmit }>
-      <label htmlFor='name'>Nombre</label>
-      <input id='name' name='name' type="text" value={ formValues.name } onChange={ handleFormChange }></input>
+    <form onSubmit={handleSubmit} id="formulario">
+
+      <div className="four-fiels">
       
-      <label htmlFor='surname'>Apellido</label>
-      <input id='surname' name='surname' type="text" value={ formValues.surname } onChange={ handleFormChange }></input>
+      <div className="inputConIcon">
+          <label htmlFor='name'>Nombre</label>
+        <input id='name' name='name' type="text" value={formValues.name} onChange={handleFormChange}></input>          
+          </div>
 
-      <label htmlFor='email'>Correo</label>
-      <input id='email' name='email' type="email" value={ formValues.email } onChange={ handleFormChange }></input>
+        <div className="inputConIcon">
+        <label htmlFor='surname'>Apellido</label>
+        <input id='surname' name='surname' type="text" value={formValues.surname} onChange={handleFormChange}></input>
+        </div>
 
-      <label htmlFor='date'>Fecha</label>
-      <input id='date' name='date' type="date" value={ formValues.date } onChange={ handleFormChange }></input>
+        <div className="inputConIcon">
+        <label htmlFor='email'>Correo</label>
+        <input id='email' name='email' type="email" value={formValues.email} onChange={handleFormChange}></input>
+          </div>
 
-      <label htmlFor='reservationDescrip'>Descripcion</label>
-      <textarea id='reservationDescrip' name='reservationDescrip' value={ formValues.reservationDescrip } onChange={ handleFormChange }></textarea>
 
+
+          <div className="inputConIcon">
+
+        <label className="fecha" htmlFor='date'>Fecha</label>
+        <input id='date' name='date' type="date" value={formValues.date} onChange={handleFormChange}></input>
+          </div>
+        
+      </div>
+
+      <div className="fiels">
+        <div className="inputConIcon textareaIcon">
+        <label htmlFor='reservationDescrip'>Comentarios</label>
+        <textarea id='reservationDescrip' name='reservationDescrip' value={formValues.reservationDescrip} onChange={handleFormChange}></textarea>
+        </div>
+      </div>
+
+      <div className="fiels-boton">
       <button type='submit' >Enviar</button>
+      </div>
     </form>
   )
 }
