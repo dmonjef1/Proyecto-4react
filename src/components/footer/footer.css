@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #fcfcfc;
     font-family: sans-serif;
 }
 
-footer{
+footer {
 
     bottom: 0;
     left: 0;
@@ -22,7 +22,7 @@ footer{
     margin-top: 15px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,14 +30,14 @@ footer{
     text-align: center;
 }
 
-.footer-content h3{
+.footer-content h3 {
     font-size: 2.1rem;
     font-weight: 500;
     text-transform: capitalize;
     line-height: 3rem;
 }
 
-.footer-content p{
+.footer-content p {
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
@@ -45,7 +45,7 @@ footer{
     color: #cacdd2;
 }
 
-.socials{
+.socials {
     list-style: none;
     display: flex;
     align-items: center;
@@ -53,11 +53,11 @@ footer{
     margin: 1rem 0 3rem 0;
 }
 
-.socials i{
+.socials i {
     margin: 0 10px;
 }
 
-.socials i{
+.socials i {
     text-decoration: none;
     color: #fff;
     border: 1.1px solid white;
@@ -65,11 +65,11 @@ footer{
     border-radius: 50%;
 }
 
-.socials i:hover i{
+.socials i:hover i {
     color: aqua;
 }
 
-.footer-bottom{
+.footer-bottom {
     background: #000;
     width: 100vw;
     padding: 20px;
@@ -77,49 +77,51 @@ footer{
     text-align: center;
 }
 
-.footer-bottom p{
+.footer-bottom p {
     float: left;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
- }
- .footer-bottom p{
-   color:#44bae8;
-   font-size: 16px;
-   text-decoration: none;
- }
- .footer-bottom span{
-     text-transform: uppercase;
-     opacity: .4;
-     font-weight: 200;
- }
+}
 
- .footer-menu{
+.footer-bottom p {
+    color: #44bae8;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.footer-menu {
     float: right;
-  }
-  
-  .footer-menu ul{
+}
+
+.footer-menu ul {
     display: flex;
-  }
-  
-  .footer-menu ul li{
-  padding-right: 10px;
-  display: block;
-  }
-  
-  .footer-menu ul li a{
+}
+
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footer-menu ul li a {
     color: #cfd2d6;
     text-decoration: none;
-  }
-  
-  .footer-menu ul li a:hover{
-    color: #27bcda;
-  }
+}
 
-  @media (max-width:500px) {
-    .footer-menu ul{
-      display: flex;
-      margin-top: 10px;
-      margin-bottom: 20px;
+.footer-menu ul li a:hover {
+    color: #27bcda;
+}
+
+@media (max-width:500px) {
+    .footer-menu ul {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
-    }
+}

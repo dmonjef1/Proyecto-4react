@@ -1,3 +1,9 @@
+.titulo-nosotros {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
 #equipo{
     height: 100vh;
     display: flex;
